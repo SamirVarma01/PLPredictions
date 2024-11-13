@@ -1,35 +1,35 @@
 # PLPredictions
 A model that can predict the outcome of Premier League matches, utilizing data from the 1993-1994 season to November 2024.
 
-Development Journey
-Initial Approach
-The platform began with a basic implementation using LightGBM for prediction:
-Attempted to create rolling statistics for team performance
-Initial attempt failed due to dataset column name mismatches
-Identified need for proper feature engineering
 Feature Engineering Evolution
 1. Basic Model Implementation (F1: 0.6007)
 Team performance metrics
-Basic head-to-head statistics
-Rolling averages for:
-Goals scored
-Shots on target
-Team form
+- Basic head-to-head statistics
+- Rolling averages for:
+- Goals scored
+- Shots on target
+- Team form
 2. Enhanced Feature Set (F1: 0.6046)
-Added comprehensive head-to-head historical statistics
-Incorporated detailed win/loss/draw statistics
-Improved granularity of performance metrics
+- Added comprehensive head-to-head historical statistics
+- Incorporated detailed win/loss/draw statistics
+- Improved granularity of performance metrics
 3. Venue-Specific Analysis (F1: 0.5986)
-Split features into home/away specific metrics Implemented separate tracking for:
-Home game performance
-Away game performance Venue-specific form calculations
+- Split features into home/away specific metrics Implemented separate tracking for:
+- Home game performance
+- Away game performance
+- Venue-specific form calculations
 4. Additional Factors (F1: 0.4724)
-Incorporated referee impact through encoding Simplified feature set for better generalization Implemented time-based validation approach
-Best Performing Model (F1: 0.8326) Key Features
-Team streak statistics Win streaks
-Loss streaks
-Unbeaten runs
-Historical head-to-head performance Recent form using rolling averages Venue-specific performance metrics Time series cross-validation
+- Incorporated referee impact through encoding Simplified feature set for better generalization
+- Implemented time-based validation approach
+- Best Performing Model (F1: 0.8326)
+- Key Features
+    Team streak statistics Win streaks
+    Loss streaks
+    Unbeaten runs
+    Historical head-to-head performance
+    Recent form using rolling averages
+   Venue-specific performance metrics
+  Time series cross-validation
 Technical Learnings Critical Success Factors
 1. Feature Importance
 Team form proved crucial for prediction
