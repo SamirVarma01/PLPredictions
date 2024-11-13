@@ -30,15 +30,19 @@ Team performance metrics
     Recent form using rolling averages
    Venue-specific performance metrics
   Time series cross-validation
+
+  
 Technical Learnings Critical Success Factors
 1. Feature Importance
-Team form proved crucial for prediction
-Head-to-head statistics significantly improved accuracy Venue-specific performance metrics added valuable context
+- Team form proved crucial for prediction
+- Head-to-head statistics significantly improved accuracy
+- Venue-specific performance metrics added valuable context
 2. Data Handling
-Careful management of temporal aspects Prevention of data leakage
-Proper handling of rolling statistics
+- Careful management of temporal aspects Prevention of data leakage
+- Proper handling of rolling statistics
 3. Model Improvements
-Automatic identification and correction of column mismatches
-Implementation of proper index handling Optimization of feature calculation timing
-Conclusion
-Through automated iteration and improvement, the platform successfully developed a robust model for Premier League match prediction. The final model demonstrates strong predictive capabilities with an F1 score of 0.8326, effectively capturing the complex patterns in football match outcomes.
+- Automatic identification and correction of column mismatches
+- Implementation of proper index handling
+- Optimization of feature calculation timing
+
+Still working on optimization of the model for casual use.
